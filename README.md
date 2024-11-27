@@ -129,3 +129,15 @@ else
 ```
 ![image](https://github.com/user-attachments/assets/8f3ea8f8-6ae1-44d1-855d-3a50831de63d)
 
+**Map() Vs filter()**
+```
+ <script>
+  function Find(){
+    const arr=[1,2,3,4];
+    const mapArr=arr.map(a=>(a*a));  // [1, 4, 9, 16]
+    console.log(mapArr);  
+    const filterArr=arr.filter(a=>(a%2)==0); // [2, 4]
+    console.log(filterArr); 
+   }
+    </script>
+```
