@@ -97,3 +97,35 @@ else
 </html>
 ```
 ![image](https://github.com/user-attachments/assets/935075a2-bcdb-403b-a15e-f4209bb1df9f)
+
+**Remove Duplicate elements from an array**
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+  function Find(){
+    let arr=[1,2,2,3,4,4,4,5,6];
+    const newarr=[];
+    console.log(arr);
+    for(let i=0;i<arr.length;i++)
+    {
+        if(newarr.indexOf(arr[i])==-1)
+    {
+        newarr.push(arr[i]);
+    }
+    }
+    console.log(newarr);
+   }
+    </script>
+</head>
+<body>
+
+<h1>Remove Duplicate elements from an array</h1>
+<button type="button" onclick="Find()">run</button>
+</body>
+</html>
+
+```
+![image](https://github.com/user-attachments/assets/8f3ea8f8-6ae1-44d1-855d-3a50831de63d)
+
