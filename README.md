@@ -62,4 +62,38 @@
 ```
 ![image](https://github.com/user-attachments/assets/5ae73b5c-c24b-4bfb-ba90-a17868dcf1b8)
 
+**Palindrome or not**
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+  function Find(){
+    let input=document.getElementById("inputData").value;
+    let output="";
+    for(let i=input.length-1;i>=0;i--)
+  {
+    output+=input[i];
+  }
+if(input==output)
+{
+    document.getElementById("output").innerHTML="given string is Palindrome";
+}
+else
+{
+    document.getElementById("output").innerHTML="given string is Not Palindrome";
+}
+  }
+    </script>
+</head>
+<body>
 
+<h1>Palindrome or not</h1>
+<input type="text" id="inputData" />
+<button type="button" onclick="Find()">Find</button>
+<h3><U>Output</U></h3>
+<p id="output"></p>
+</body>
+</html>
+```
+![image](https://github.com/user-attachments/assets/935075a2-bcdb-403b-a15e-f4209bb1df9f)
