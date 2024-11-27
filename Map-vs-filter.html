@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+  function Find(){
+    const arr=[1,2,3,4];
+    const mapArr=arr.map(a=>(a*a));  // [1, 4, 9, 16]
+    console.log(mapArr);  
+    const filterArr=arr.filter(a=>(a%2)==0); // [2, 4]
+    console.log(filterArr); 
+   }
+    </script>
+</head>
+<body>
+<h1>Map-vs-filter</h1>
+<button type="button" onclick="Find()">run</button>
+</body>
+</html>
+
