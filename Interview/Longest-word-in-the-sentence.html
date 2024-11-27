@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+  function reverse(){
+    let input=document.getElementById("inputData").value;
+    let output="";
+    let outputlength=0;
+    const words=input.split(" ");
+    for(let i=0;i<words.length;i++)
+  {
+    if(outputlength<words[i].length)
+  {
+    outputlength=words[i].length;
+    output=words[i];
+  }
+  }
+    document.getElementById("output").innerHTML=output;
+  }
+    </script>
+</head>
+<body>
+
+<h1>Longest word in the sentence</h1>
+<input type="text" id="inputData" />
+<button type="button" onclick="reverse()">Reverse</button>
+<h3><U>Output</U></h3>
+<p id="output"></p>
+</body>
+</html>
+
