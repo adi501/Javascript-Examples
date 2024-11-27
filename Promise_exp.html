@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+  let promiseExp=new Promise(function (resolve1,reject1){
+    const a=10;
+    const b=10;
+    if(a==b){
+        resolve1();
+    }
+    else{
+        reject1();
+    }
+  })
+  function Find(){
+    promiseExp.then(function(){
+        console.log("Equal...Promise fulfilled");
+    }).catch(function(){
+        console.log("Not Equal...Promise Rejected");
+    })
+   }
+    </script>
+</head>
+<body>
+<h1>Promise Exp</h1>
+<button type="button" onclick="Find()">run</button>
+</body>
+</html>
+
